@@ -1,30 +1,27 @@
 # Final Thesis Project
 This GitHub repository contains the data and code I have used in my Final Thesis Project for the MSc in Applied Data Science (Utrecht University), titled "Using artificial neural networks to improve hydrological streamflow predictions from PCR-GLOBWB". The latest version of the thesis can also be found in this repository as a pdf file.
 
-To be able to run the code, the paths should be changed to your own when it says in the comments. The folder structure, starting from the same level as the code, should be the following for the code to work out-of-the-box:
+To be able to run the code, the paths should be changed to your own when it says in the comments. The following folder structure, starting from the same level as the code, should be created for the code to work out-of-the-box:
 
-- output
+└── output
+└── temp
+    ├── formatted_data
+    │   ├── basel
+    │   └── lobith
+    └── predictions
+        ├── basel
+        │   ├── lag
+        │   │   ├── fcn
+        │   │   ├── mlr
+        │   │   ├── pcr
+        │   │   └── tcn
+        │   └── no_lag
+        │       ├── fcn
+        │       ├── mlr
+        │       └── pcr
+        └── lobith
+            └── (same structure as basel)
 
-- temp
-  - formatted_data
-    - basel
-    - lobith
-
-  - predictions
-    - basel
-      - lag
-        - fcn
-        - mlr
-        - pcr
-        - tcn
-        
-      - no_lag
-        - fcn
-        - mlr
-        - pcr
-      
-    - lobith
-      - (same as in basel)
 
 The data_formatting.ipynb should be the first script to be run, since it formats the data (located in the data folder of this repositoy) to be used later by the other files. There, one must choose the amount of time steps added as lagged variables, the train-test split fraction and the location of the data to be formatted.
 
