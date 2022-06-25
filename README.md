@@ -3,6 +3,7 @@ This GitHub repository contains the data and code I have used in my Final Thesis
 
 To be able to run the code, the paths should be changed to your own when it says in the comments. The following folder structure, starting from the same level as the code, should be created for the code to work out-of-the-box:
 
+```
 └── output
 └── temp
     ├── formatted_data
@@ -21,7 +22,7 @@ To be able to run the code, the paths should be changed to your own when it says
         │       └── pcr
         └── lobith
             └── (same structure as basel)
-
+```
 
 The data_formatting.ipynb should be the first script to be run, since it formats the data (located in the data folder of this repositoy) to be used later by the other files. There, one must choose the amount of time steps added as lagged variables, the train-test split fraction and the location of the data to be formatted.
 
