@@ -26,10 +26,10 @@ To be able to run the code, the paths should be changed to your own when it says
     - lobith
       - (same as in basel)
 
-The data_formatting.ipynb should be the first script to be run, since it formats the data to be used later by the other files. There one must choose the amount of time steps added as lagged variables, the train-test split fraction and the location of the data to be formatted.
+The data_formatting.ipynb should be the first script to be run, since it formats the data (located in the data folder of this repositoy) to be used later by the other files. There, one must choose the amount of time steps added as lagged variables, the train-test split fraction and the location of the data to be formatted.
 
 PCR_MLR.ipynb takes the results from PCR-GLOBWB and makes the predictions using multiple linear regression in the given location, with or without lag. The number of runs should equal the amount of possible train-test splits (5 by default, for a 80% train split).
 
 FCNN.ipynb and TCNN.ipynb make the predictions for their respective models, for a user-defined number of runs, on different test sets or not, for the specified location and either whether using lagged variables or not (FCNN) or for the given time window (TCNN).
 
-Finally, analysis and visualization can be run to obtain all the figures showcased in the thesis, as well as some analysis of the results.
+Finally, analysis_and_visualization.ipynb can be run to obtain all the figures showcased in the thesis, as well as some analysis of the results.
