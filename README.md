@@ -1,5 +1,5 @@
 # Final Thesis Project
-This GitHub repository contains the data and code I have used in my Final Thesis Project for the MSc in Applied Data Science (Utrecht University), titled "Using artificial neural networks to improve hydrological streamflow predictions from PCR-GLOBWB". The latest version of the thesis can also be found in this repository as a pdf file, named "Final_Thesis_Project_FINAL.pdf".
+This GitHub repository contains the data and code I have used in my Final Thesis Project for the MSc in Applied Data Science (Utrecht University), titled "Using artificial neural networks to improve hydrological streamflow predictions from PCR-GLOBWB". The final version of the thesis can be found at https://studenttheses.uu.nl/handle/20.500.12932/42499.
 
 To be able to run the code, the paths should be changed to your own when it says in the comments. The following folder structure, starting from the same level as the code, should be created for the code to work out-of-the-box:
 
